@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>输入框和导航组件</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="input-group">
+			<!-- input-group-addon添加文字 -->
+			<span class="input-group-addon">@</span>
+		<!-- form-control输入框占100%宽度 -->
+		    <input type="text" class="form-control"/>
+		</div>
+		<br />
+		
+		<div class="input-group">
+		<!-- form-control输入框占100%宽度 -->
+		    <input type="text" class="form-control"/>
+		    <span class="input-group-addon">@163.com</span>
+		    <!-- 放在右边代表在右边添加文字 -->
+		</div>
+		<br />
+		
+		<div class="input-group">
+			<span class="input-group-addon">$</span>
+		    <!-- form-control输入框占100%宽度 -->
+		    <input type="text" class="form-control"/>
+		    <span class="input-group-addon">.00</span>
+		</div>
+		
+		<!-- <span class="input-group-addon"><input type="checkbox" /></span>复选框应用 -->
+		<div class="input-group">
+			<span class="input-group-addon"><input type="checkbox" /></span>
+		    <input type="text" class="form-control"/>
+		</div>
+		
+		<!-- <span class="input-group-addon"><input type="radio" /></span>单选框应用 -->
+		<div class="input-group">
+			<span class="input-group-addon"><input type="radio" /></span>
+		    <input type="text" class="form-control"/>
+		</div>
+		
+		<!--
+			input-group-lg 最大号
+		    input-group-xs 小号
+		    input-group-sm 超小号
+		-->
+		
+		<!-- 输入框按钮组件 -->
+		<div class="input-group">
+			<input type="text" class="form-control" />
+			<!-- 在输入框组件中按钮所属的div的class应为input-group-btn -->
+			<div class="input-group-btn">
+				<button class="btn btn-default">提交</button>
+			</div>
+		</div>
+		
+		<!-- 输入框下拉菜单组件 -->
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					下拉菜单
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="dropdown-header">网站导航</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">产品</a></li>
+					<li class="divider"></li>
+					<li class="disabled"><a href="#">关于</a></li>
+				</ul>
+			</span>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>

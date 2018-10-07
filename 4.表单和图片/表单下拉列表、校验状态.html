@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单和图片</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+	<body>
+		<form>
+			<select class="form-control">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+			
+			<!-- 				
+			    has-success 成功状态
+			    has-error 错误状态
+			    has-warning 警告状态
+			-->
+			<div class="form-group has-success">
+				
+				<!-- control-label表同步，如果通不了，就会使用上面的CSS -->
+			    <label class="control-label">电子邮件</label>
+			    <input type="email" class="form-control" placeholder="请输入您的电子邮件"/>
+			</div>
+		</form>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>

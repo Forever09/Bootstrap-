@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图标菜单按钮组件</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="btn-group">
+			<button class="btn btn-default">1</button>
+		    <button class="btn btn-default">2</button>
+		    <button class="btn btn-default">3</button>
+		    <!-- 在按钮组件引入下拉菜单时，应将下拉菜单div的dropdown更换为btn-group button按钮里面加上dropdown-toggle使其为圆角 -->
+		    <div class="btn-group">
+		    	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    		下拉菜单
+		    		<span class="caret"></span>
+		    	</button>
+		    	<ul class="dropdown-menu">
+		    		<li><a href="#">首页</a></li>
+		    		<li><a href="#">资讯</a></li>
+		    		<li><a href="#">产品</a></li>
+		    		<li><a href="#">关于</a></li>
+		    	</ul>
+		    </div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>
